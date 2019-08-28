@@ -3,10 +3,10 @@ import React from 'react';
 const Approval = props => {
   return (
     <div className="ui card">
-      <div className="content">    
-        { 
+      <div className="content">
+        {
           /* Are you sure? */
-          props.children 
+          props.children
         }
       </div>
       <div className="extra content">
@@ -16,9 +16,7 @@ const Approval = props => {
         </div>
       </div>
     </div>
-
   );
-}
- 
-export default Approval;
+};
 
+export default Approval;

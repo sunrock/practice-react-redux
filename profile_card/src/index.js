@@ -14,7 +14,7 @@ const App = () => {
       <Comment author="Peter" />
     </div>
   );
-}
+};
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<App />, document.querySelector('#root'));

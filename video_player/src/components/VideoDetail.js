@@ -1,12 +1,11 @@
 import React from 'react';
 
 const VideoDetail = ({ video }) => {
-
   if (!video) {
-    return <div>Null</div>
+    return <div>Null</div>;
   }
 
-  const videoEmbed = `https://www.youtube.com/embed/${ video.id.videoId}`;
+  const videoEmbed = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
     <div>
@@ -14,12 +13,11 @@ const VideoDetail = ({ video }) => {
         <iframe title="Video Player" src={videoEmbed}></iframe>
       </div>
       <div className="ui segment">
-        <h4 className="ui header">{ video.snippet.title }</h4>
-        <p>{ video.snippet.description  }</p>
+        <h4 className="ui header">{video.snippet.title}</h4>
+        <p>{video.snippet.description}</p>
       </div>
     </div>
-
-  )
-}
+  );
+};
 
 export default VideoDetail;
